@@ -1,0 +1,232 @@
+
+@color0: #f8c8e2;
+@color1: #fffdd0;
+@color2: #a57e56;
+@color3: #000000;
+
+
+@width0: 200px;
+@width1: 100%;
+
+
+@height1: 200px;
+
+body {
+  background: @color1;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+  line-height:1;
+  margin: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+h2 {
+  color: @color0;
+  float: left;
+  font-size: 12px;
+  opacity: 80%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header {
+  background: @color2;
+  &: {
+    after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+  }
+}
+nav {
+  padding-top: 0;
+  text-align: center;
+  h1 {
+    color: @color0;
+    float: left;
+    font-family: "Droid Sans Mono Slashed";
+    font-size: 20px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  i {
+    color: @color0;
+    float:right;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 20px;
+    padding-top: 24px;
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+  }
+  a {
+    color: @color1;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      color:@color0;
+    {
+      before {
+        width: @width1;
+      }
+    }
+    }
+    &: {
+      before {
+        background-color: @color1;
+        content: '';
+        display: block;
+        height: 5px;
+        position: absolute;
+        top: 0;
+        transition: all ease-in-out 250ms;
+        width: 0;
+      }
+    }
+  }
+}
+h1 {
+  color: black;
+  font-family: "Droid Sans Mono Slashed";
+  font-size: 20px;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.fa-facebook {
+  color: @color0;
+  display:inline-block;
+  float: right;
+  font-size: 20px;
+  margin-right: 1em;
+  padding-left: 4%;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align:top;
+}
+.fa-twitter {
+  color: @color0;
+  display:inline-block;
+  float: right;
+  font-size: 20px;
+  margin-right: 1em;
+  padding-left: 4%;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align:top;
+}
+.fa-instagram {
+  color: @color0;
+  display:inline-block;
+  float: right;
+  font-size: 20px;
+  margin-right: 1em;
+  padding-left: 4%;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align:top;
+}
+footer {
+  background-color:@color2;
+  bottom: 0;
+  height: 2.5rem;
+  position: fixed;
+  width: @width1;
+}
+.socialStyle {
+  color: pink;
+  font-size: 20px;
+  padding-top: 4px;
+  text-align: center;
+  text-decoration: none;
+  text-space: 7px;
+}
+.flex-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.flex-item1 {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: arial;
+  height: @height1;
+  margin: auto;
+  text-align: center;
+  width: @width0;
+}
+.flex-item2 {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: arial;
+  height: @height1;
+  margin: auto;
+  text-align: center;
+  width: @width0;
+}
+.flex-item3 {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: arial;
+  height: @height1;
+  margin: auto;
+  text-align: center;
+  width: @width0;
+}
+.flex-item4 {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: arial;
+  height: @height1;
+  margin: auto;
+  text-align: center;
+  width: @width0;
+}
+.button {
+  background-color: @color3;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  float: bottom;
+  outline: 0;
+  padding: 8px;
+  text-align: center;
+  width: @width1;
+}
+.price {
+  color: black;
+  font-size: 22px;
+}
+.card {
+  button {
+    background-color: @color3;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    outline: 0;
+    padding: 12px;
+    text-align: center;
+    width: @width1;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

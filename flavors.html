@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flavors</title>
+  <link rel="stylesheet" href="flavors.css  ">
+  <script src="https://kit.fontawesome.com/350af5c770.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<header>
+  <nav>
+    <div class="container">
+      <h1> Super Duper Ice Cream Shop </h1>
+      <i class="fas fa-map-marker-alt"></i>
+      <i class="fas fa-search"></i>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="flavors.html">Flavors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="dropdownMenu">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="flavors.html">Flavors</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+</header>
+<body>
+
+<h1>Our Famous Flavors</h1>
+<div class="flex-container">
+  <div class="flex-item1"><img src="iceCreamShop/flavorImages/icecream1.jpg"  width="200" height="200" alt="Blue" style="width:100%">
+    <h1>Blue</h1>
+    <p class="price">$2.99</p>
+    <div id="blueDiv"  style="display:none;" class="answer_list" > Blue is one of our most popular flavors!</div>
+    <input type="button" name="answer" value="More Information" onclick="showDiv()" />
+  </div>
+  <div class="flex-item2"><img src="iceCreamShop/flavorImages/icecream2.jpg" width="200" height="200" alt="Chocolate" style="width:100%">
+    <h1> Chocolate</h1>
+    <p class="price">$1.99</p>
+    <div id="chocolateDiv"  style="display:none;" class="answer_list" > Our Chocolate comes with a twist!</div>
+    <input type="button" name="answer" value="More Information" onclick="showDivchocolate()" /> </div>
+  <div class="flex-item3"> <img src="iceCreamShop/flavorImages/icecream3.jpg" width="200" height="200" alt="Vanilla" style="width:100%">
+    <h1>Vanilla</h1>
+    <p class="price">$1.99</p>
+    <div id="vDiv"  style="display:none;" class="answer_list" >Our Vanilla is great for floats!</div>
+    <input type="button" name="answer" value="More Information" onclick="showDivchocolatev()" /> </div>
+  <div class="flex-item4"><img src="iceCreamShop/flavorImages/icecream4.jpg" width="200" height="200" alt="The Trio" style="width:100%">
+    <h1>The Trio</h1>
+    <p class="price">$3.99</p>
+    <div id="trioDiv"  style="display:none;" class="answer_list" > Our Trio is a mix of chocolate, vanilla, and our strawberry!</div>
+    <input type="button" name="answer" value="More Information" onclick="showDivtrio()" />  </div>
+</div>
+<script src="app.js"></script>
+</body>
+<footer>
+  <h2> "Where ice cream is super!"</h2>
+  <div class ="socialStyle">
+    <a href="" class="fa fa-facebook"></a>
+    <a href="" class="fa fa-twitter"></a>
+    <a href="" class="fa fa-instagram"></a>
+  </div>
+</footer>
+</html>
